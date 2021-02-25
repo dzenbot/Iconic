@@ -6,11 +6,11 @@
 #  Script in charge of executing SwiftGen, passing the icon font file path, the enum name and the custom stencil as arguments.
 #
 
-# The optional font file path passed as arg
-INPUT_PATH=$1
+# The optional font file path passed as environemnt variable
+INPUT_PATH=$FONT_PATH
 
 # The optional custom name to use instead of deriving one via file name
-CUSTOM_NAME=$2
+CUSTOM_NAME=$CUSTOM_FONT_NAME
 
 # The root path for the generated files
 OUTPUT_PATH=Source
